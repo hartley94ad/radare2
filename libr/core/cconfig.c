@@ -2250,9 +2250,7 @@ static bool cb_scrhtml(void *user, void *data) {
 }
 
 static bool cb_newshell(void *user, void *data) {
-	RConfigNode *node = (RConfigNode *)data;
-	RCore *core = (RCore *)user;
-	core->use_tree_sitter_r2cmd = node->i_value;
+	eprintf ("Warning: newshell has been temporarily disabled\n");
 	return true;
 }
 
